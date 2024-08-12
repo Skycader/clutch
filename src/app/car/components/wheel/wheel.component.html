@@ -1,0 +1,37 @@
+<div
+  class="wheel"
+  [style.animation-name]="'go'"
+  [style.animation-iteration-count]="'infinite'"
+  [style.animation-timing-function]="'linear'"
+  [style.animation-duration]="animation"
+>
+  <div class="name"></div>
+</div>
+
+<br />
+
+<input
+  style="width: 500px"
+  type="range"
+  min="0"
+  max="400"
+  [(ngModel)]="speed"
+/>
+<div>{{ (229 * speed) / 100 / 16.667 }} km/h</div>
+
+<div>Started: {{ started }}</div>
+<div>Transmission speed {{ transmission }}</div>
+<div>Clutch {{ clutch }}</div>
+<div>Engine {{ engine }}</div>
+
+<button (click)="started = !started">Start engine</button>
+<input
+  style="width: 500px"
+  type="range"
+  min="0"
+  max="1"
+  step="0.01"
+  [(ngModel)]="clutch"
+/>
+
+<button (click)="transmit()">transmit</button>
