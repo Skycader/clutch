@@ -17,7 +17,7 @@ export class WheelComponent {
 
   public started = false;
   public engine = 0;
-  public clutch = 0;
+  public clutch = 1;
   public transmission = 0;
 
   public transmit() {
