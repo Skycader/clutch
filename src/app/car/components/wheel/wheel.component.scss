@@ -27,3 +27,8 @@
 .speed-1 {
   animation: go 10s linear infinite;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+}

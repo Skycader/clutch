@@ -1,0 +1,96 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  height: 350px;
+}
+.speed {
+  position: absolute;
+  display: flex;
+  transform: translate(-50%, -50%);
+}
+
+.speed__wheel {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #000;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 90%);
+}
+
+.speed__tick {
+  display: flex;
+  gap: 1px;
+}
+
+.tick {
+  transform-origin: bottom;
+  position: absolute;
+  background: linear-gradient(to top, transparent 90%, red 90%);
+  height: 140px;
+  width: 2px;
+  top: 10px;
+  left: 50%;
+  transform: rotate(var(--angle)) rotateZ(-127deg);
+}
+.tick:nth-child(odd)::before {
+  position: absolute;
+  content: attr(value) "";
+  color: #fff;
+  left: -8px;
+  top: 20px;
+  z-index: 11;
+  transform: rotate(var(--position-number));
+}
+
+@for $i from 0 to 20 {
+  .tick:nth-child(#{$i + 1}) {
+    --angle: #{360deg / 27 * $i};
+    --position-number: #{130deg + (-13.5deg * $i)};
+  }
+}
+
+.pointer {
+  position: relative;
+  background: yellow;
+  height: 190px;
+  width: 20px;
+  left: 140px;
+  top: 3px;
+  clip-path: polygon(9px 10px, 11px 10px, 20px 150px, 10px 190px, 0 150px);
+  transform-origin: 10px 145px;
+}
+
+.pointer::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: gray;
+  top: 140px;
+  left: 5px;
+  border-radius: 50%;
+}
+
+.endpoint {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: grey;
+  top: 225px;
+  left: 235px;
+  border-radius: 50%;
+}
+
+@keyframes animate-pointer {
+  0% {
+    transform: rotate(-130deg);
+  }
+  80% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(-130deg);
+  }
+}
