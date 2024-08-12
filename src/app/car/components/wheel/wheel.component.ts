@@ -19,6 +19,7 @@ export class WheelComponent {
   public engine = 0;
   public clutch = 1;
   public transmission = 0;
+  public break = 1;
 
   public transmit() {
     if (this.started) this.engine += 80;
@@ -40,7 +41,7 @@ export class WheelComponent {
 
     if (this.transmission > 1000) this.transmission = 1000;
 
-    this.transmission -= 200 * 0.01;
+    this.transmission -= (200 * 0.01) / (this.break + 0.01);
     if (this.transmission < 0) this.transmission = 0;
 
     this.speed = this.transmission / 100;
