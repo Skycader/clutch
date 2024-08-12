@@ -26,8 +26,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
+import { MatSliderModule } from '@angular/material/slider';
 import { MatPaginatorModule } from '@angular/material/paginator';
 const MaterialComponents = [
+  MatSliderModule,
   MatButtonModule,
   MatRippleModule,
   MatMenuModule,

@@ -21,7 +21,7 @@ export class WheelComponent {
   public transmission = 0;
 
   public transmit() {
-    if (this.started) this.engine += 100;
+    if (this.started) this.engine += 80;
     if (!this.started) this.engine -= 45;
     if (this.engine < 0) this.engine = 0;
     if (this.started && this.engine > 1000) this.engine = 1000;
@@ -47,9 +47,57 @@ export class WheelComponent {
     this.speed2 = this.transmission;
   }
 
+  public startAudio = new Audio('assets/sounds/start.m4a');
+
+  public status = 'Start engine';
+  public startEngine() {
+    this.startAudio.play();
+    this.status = 'Starting...';
+
+    setTimeout(() => {
+      this.started = true;
+      this.status = 'Start engine';
+    }, 2000);
+  }
+
+  public stopAudio = new Audio('assets/sounds/stop.wav');
+
+  public stopEngine() {
+    this.startAudio.pause();
+    this.startAudio.currentTime = 0;
+
+    this.stopAudio.play();
+    setTimeout(() => {
+      this.started = false;
+    }, 100);
+  }
+
+  public toggleEngine(event: any) {
+    console.log(event);
+  }
+
+  public playRevv() {
+    if (Date.now() - this.revvPlaying > 2000) {
+      var revvAudio = new Audio('assets/sounds/revv.m4a');
+      revvAudio.play();
+      this.revvPlaying = Date.now();
+    }
+  }
+
+  public lastEngine = 0;
+  public revvPlaying = Date.now();
+
   ngOnInit() {
     setInterval(() => {
       this.transmit();
+    }, 100);
+
+    setInterval(() => {
+      if (this.engine - 10 > this.lastEngine) {
+        this.playRevv();
+        this.lastEngine = this.engine;
+      }
+      this.lastEngine = this.engine;
     }, 100);
   }
 }
