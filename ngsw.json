@@ -1,0 +1,143 @@
+{
+  "configVersion": 1,
+  "timestamp": 1723499553906,
+  "index": "https://skycader.github.io/clutch/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://skycader.github.io/clutch/chunk-5ZW7PB5Y.js",
+        "https://skycader.github.io/clutch/chunk-OUM2WA2J.js",
+        "https://skycader.github.io/clutch/favicon.ico",
+        "https://skycader.github.io/clutch/index.html",
+        "https://skycader.github.io/clutch/main-5SUGTRLS.js",
+        "https://skycader.github.io/clutch/manifest.webmanifest",
+        "https://skycader.github.io/clutch/polyfills-6EAL64PA.js",
+        "https://skycader.github.io/clutch/scripts-EEEIPNC3.js",
+        "https://skycader.github.io/clutch/styles-IPIMOEDR.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmEU9fBBc4.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fBBc4.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu4WxKOzY.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu7WxKOzY.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu7mxKOzY.woff2",
+        "https://skycader.github.io/clutch/assets/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2",
+        "https://skycader.github.io/clutch/assets/icons/icon-128x128.png",
+        "https://skycader.github.io/clutch/assets/icons/icon-144x144.png",
+        "https://skycader.github.io/clutch/assets/icons/icon-152x152.png",
+        "https://skycader.github.io/clutch/assets/icons/icon-192x192.png",
+        "https://skycader.github.io/clutch/assets/icons/icon-384x384.png",
+        "https://skycader.github.io/clutch/assets/icons/icon-512x512.png",
+        "https://skycader.github.io/clutch/assets/icons/icon-72x72.png",
+        "https://skycader.github.io/clutch/assets/icons/icon-96x96.png",
+        "https://skycader.github.io/clutch/assets/images/ngrx.png",
+        "https://skycader.github.io/clutch/assets/images/ngrx.svg",
+        "https://skycader.github.io/clutch/assets/images/ngrx2.svg",
+        "https://skycader.github.io/clutch/assets/images/ngrx3.svg",
+        "https://skycader.github.io/clutch/assets/sounds/revv.m4a",
+        "https://skycader.github.io/clutch/assets/sounds/start.m4a",
+        "https://skycader.github.io/clutch/assets/sounds/stop.wav",
+        "https://skycader.github.io/clutch/media/ngrx-TUFBSF6A.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2": "4b5fb5790fae1c96655aaa7a426b697f5ab986d0",
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmEU9fBBc4.woff2": "23cef6993ddb2b2979e8e7647fc3763694e2ba7d",
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2": "70fba5c0c3e1f5c5786e615d35a21c54b1c0a39c",
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2": "ee978e8fdfd40ebafc3b02df946d90674ef18437",
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2": "2de8795c68aa9f2c76f640baf533086f932f0042",
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2": "76f4002863493c93454a9f17424942f321287cba",
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2": "1df345651c653bba476ab6b8546351ec7f4f018a",
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fBBc4.woff2": "e57e59c5780995ff2937ab2b511a769212974a87",
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2": "f904cc5dfbbfe7d3d9b1a42e98f6ee72c1bdad5c",
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2": "041ef1e2fb0a24ae577b088f7c01b0f8156eb414",
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2": "7c8fcb4f292483b65f4e1f5f48edd85bad63019c",
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2": "d7d746e03e49f7e10ca0b11e598f3d6db5e34a2b",
+    "https://skycader.github.io/clutch/assets/fonts/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2": "aa3975c27acaa0fc617524acc2e001b714078b8d",
+    "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu4WxKOzY.woff2": "7cfbc415c45b2274a5997255fbec0fb53bbe327d",
+    "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2": "7ca9c5967f3bb8bffeab24b639b49c1e7d03fa52",
+    "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2": "112a2fc5f4ff9b85ee3a706fa9b8c47f79b05933",
+    "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2": "dd22a41fa21ec4a4a8d29fd369d9bee919cb98ac",
+    "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2": "b743548770c46d905ae1ba06310bc001c587fe8e",
+    "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu7WxKOzY.woff2": "109cd4c5435bd6614391bb8722c47c287c96b2ec",
+    "https://skycader.github.io/clutch/assets/fonts/KFOmCnqEu92Fr1Mu7mxKOzY.woff2": "4df39eaa5d1a70ff3b5d288a74bf7a468e7583ef",
+    "https://skycader.github.io/clutch/assets/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2": "0bc0c675480d94ec7e8609dda6227f88c5d08d2c",
+    "https://skycader.github.io/clutch/assets/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "https://skycader.github.io/clutch/assets/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "https://skycader.github.io/clutch/assets/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "https://skycader.github.io/clutch/assets/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "https://skycader.github.io/clutch/assets/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "https://skycader.github.io/clutch/assets/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "https://skycader.github.io/clutch/assets/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "https://skycader.github.io/clutch/assets/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "https://skycader.github.io/clutch/assets/images/ngrx.png": "16f8345bd8980833ee4a5ae92c9c6b76251b90d3",
+    "https://skycader.github.io/clutch/assets/images/ngrx.svg": "2256209579582a5e69020db9b1385b24cdd71e81",
+    "https://skycader.github.io/clutch/assets/images/ngrx2.svg": "c5d6dfe936ff6157c254ada9be7590ad53a67e73",
+    "https://skycader.github.io/clutch/assets/images/ngrx3.svg": "baee9b95bd111e275e435fd02d708a834bb1c107",
+    "https://skycader.github.io/clutch/assets/sounds/revv.m4a": "8f5ca7155799372c9f75eb5d23e42d030f035098",
+    "https://skycader.github.io/clutch/assets/sounds/start.m4a": "47ddbf1e4b964cbbf6c404af3ae34d330efd9c11",
+    "https://skycader.github.io/clutch/assets/sounds/stop.wav": "47a412d021ff9b7686fffa83ec2984b113970103",
+    "https://skycader.github.io/clutch/chunk-5ZW7PB5Y.js": "82ce69f3b3c775de83f186c8b81c15f4c397bcc2",
+    "https://skycader.github.io/clutch/chunk-OUM2WA2J.js": "ad5ea658accb050698c3eea7fc080eba50637767",
+    "https://skycader.github.io/clutch/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "https://skycader.github.io/clutch/index.html": "53a6c187d3ceb46e15237b19d6af724940cd74cf",
+    "https://skycader.github.io/clutch/main-5SUGTRLS.js": "c13a4c219c81878e01597309af4cd79877bf7552",
+    "https://skycader.github.io/clutch/manifest.webmanifest": "7e409b3eda002f072bbbb7209bbb8e348161b2af",
+    "https://skycader.github.io/clutch/media/ngrx-TUFBSF6A.png": "16f8345bd8980833ee4a5ae92c9c6b76251b90d3",
+    "https://skycader.github.io/clutch/polyfills-6EAL64PA.js": "d874147a12a6570d9b44e99935e9de8b7f3cabbc",
+    "https://skycader.github.io/clutch/scripts-EEEIPNC3.js": "2318ded8c885787a1645385a82c1ca883c359034",
+    "https://skycader.github.io/clutch/styles-IPIMOEDR.css": "103ed551cd77f89d409c1340edc7a19792a468fe"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
