@@ -34,7 +34,7 @@ export class WheelComponent {
       1000;
 
     if (this.engine <= 500 && this.clutch > 0) {
-      this.started = false;
+      this.stopEngine();
     }
     if (this.engine > 1000) this.engine = 1000;
 
@@ -66,7 +66,7 @@ export class WheelComponent {
     this.startAudio.pause();
     this.startAudio.currentTime = 0;
 
-    this.stopAudio.play();
+    if (this.engine) this.stopAudio.play();
     setTimeout(() => {
       this.started = false;
     }, 100);
@@ -79,7 +79,7 @@ export class WheelComponent {
   public playRevv() {
     if (Date.now() - this.revvPlaying > 2000) {
       var revvAudio = new Audio('assets/sounds/revv.m4a');
-      revvAudio.play();
+      if (this.engine > 200) revvAudio.play();
       this.revvPlaying = Date.now();
     }
   }
@@ -98,6 +98,6 @@ export class WheelComponent {
         this.lastEngine = this.engine;
       }
       this.lastEngine = this.engine;
-    }, 100);
+    }, 300);
   }
 }
