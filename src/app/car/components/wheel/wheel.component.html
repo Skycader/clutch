@@ -13,7 +13,7 @@
 <br />
 <div class="container">
   <app-speedmeter [speed]="engine / 7" />
-  <app-speedmeter [speed]="transmission / 40" />
+  <app-speedmeter [speed]="speed" />
 </div>
 
 <button mat-raised-button (click)="startEngine()" *ngIf="!started">
@@ -32,3 +32,16 @@
 <mat-slider style="width: 650px" min="0" max="1" step="0.01" showTickMarks>
   <input matSliderThumb [(ngModel)]="break" />
 </mat-slider>
+
+<mat-slider style="width: 650px" min="0" max="1" step="0.01" showTickMarks>
+  <input matSliderThumb [(ngModel)]="gas" />
+</mat-slider>
+
+<mat-slider style="width: 650px" min="0" max="5" step="1" showTickMarks>
+  <input matSliderThumb [(ngModel)]="gear" />
+</mat-slider>
+
+<div>{{ gas }}</div>
+<div>{{ engine }}</div>
+<div>{{ transmission }}</div>
+<div>{{ speed }}</div>

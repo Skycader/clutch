@@ -20,32 +20,50 @@ export class WheelComponent {
   public clutch = 1;
   public transmission = 0;
   public break = 1;
+  public gear = 0;
+  public gas = 1;
 
   public transmit() {
-    if (this.started) this.engine += 80;
+    if (this.started && this.engine < 1000 + (1 - this.gas) * 1000)
+      this.engine += 80 * (1 / this.gas);
+    if (this.engine > 1000 + (1 - this.gas) * 1000)
+      this.engine = 1000 + (1 - this.gas) * 1000;
+
+    this.engine -= 1;
+
     if (!this.started) this.engine -= 45;
     if (this.engine < 0) this.engine = 0;
-    if (this.started && this.engine > 1000) this.engine = 1000;
-    if (this.started) {
+
+    if (this.started && this.gear > 0) {
       if (this.transmission < this.clutch * 1000)
         this.transmission += this.engine * this.clutch * 0.05;
     }
-    this.engine -=
-      (this.engine * this.clutch * Math.abs(this.transmission - this.engine)) /
-      1000;
 
-    if (this.engine <= 500 && this.clutch > 0) {
+    if (this.gear > 0) {
+      this.engine -=
+        (this.engine *
+          this.clutch *
+          Math.abs(this.transmission - this.engine)) /
+        1000;
+
+      if (this.transmission > 0)
+        this.engine -=
+          this.gear *
+          10 *
+          (Math.abs(this.transmission - this.engine - 200) / 1000);
+      if (this.engine < 0) this.engine = 0;
+    }
+
+    if (this.engine <= 500 && this.clutch > 0 && this.gear > 0) {
       this.stopEngine();
     }
-    if (this.engine > 1000) this.engine = 1000;
 
     if (this.transmission > 1000) this.transmission = 1000;
 
-    this.transmission -= (200 * 0.01) / (this.break + 0.01);
+    this.transmission -= (1 + this.gear * 100 * 0.01) / (this.break + 0.01);
     if (this.transmission < 0) this.transmission = 0;
 
-    this.speed = this.transmission / 100;
-    this.speed2 = this.transmission;
+    this.speed = (this.transmission * this.gear * 1.2) / 60;
   }
 
   public startAudio = new Audio('assets/sounds/start.m4a');
