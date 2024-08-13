@@ -65,7 +65,7 @@ export class WheelComponent {
     this.transmission -= (1 + this.gear * 100 * 0.01) / (this.break + 0.01);
     if (this.transmission < 0) this.transmission = 0;
 
-    this.speed = (this.transmission * this.gear * 1.2) / 60;
+    this.speed = (this.transmission * 1 * 1.2) / 60;
   }
 
   public startAudio = new Audio('assets/sounds/start.m4a');
