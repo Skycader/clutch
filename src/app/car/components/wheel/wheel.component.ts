@@ -33,6 +33,8 @@ export class WheelComponent {
 
     this.engine -= 1;
 
+    this.engine -= this.clutch * this.gear * 5;
+
     if (!this.started) this.engine -= 45;
     if (this.engine < 0) this.engine = 0;
 
