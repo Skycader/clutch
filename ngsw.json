@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1723538856338,
+  "timestamp": 1723540361087,
   "index": "https://skycader.github.io/clutch/index.html",
   "assetGroups": [
     {
@@ -15,7 +15,7 @@
         "https://skycader.github.io/clutch/chunk-OUM2WA2J.js",
         "https://skycader.github.io/clutch/favicon.ico",
         "https://skycader.github.io/clutch/index.html",
-        "https://skycader.github.io/clutch/main-4CWFH4Q6.js",
+        "https://skycader.github.io/clutch/main-BBX5IH2L.js",
         "https://skycader.github.io/clutch/manifest.webmanifest",
         "https://skycader.github.io/clutch/polyfills-6EAL64PA.js",
         "https://skycader.github.io/clutch/scripts-EEEIPNC3.js",
@@ -113,8 +113,8 @@
     "https://skycader.github.io/clutch/chunk-5ZW7PB5Y.js": "82ce69f3b3c775de83f186c8b81c15f4c397bcc2",
     "https://skycader.github.io/clutch/chunk-OUM2WA2J.js": "ad5ea658accb050698c3eea7fc080eba50637767",
     "https://skycader.github.io/clutch/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "https://skycader.github.io/clutch/index.html": "15ff3da9b4bfa3025bac17bace001c01f43e28ed",
-    "https://skycader.github.io/clutch/main-4CWFH4Q6.js": "6d8c3c7feeb3d83293c23ffb6c84635697c66a51",
+    "https://skycader.github.io/clutch/index.html": "ae6c7cb80cb73055fa012931b6261cfa2e3babd9",
+    "https://skycader.github.io/clutch/main-BBX5IH2L.js": "b5696317e2231a5d99f4409c2d885d9f5f680b8d",
     "https://skycader.github.io/clutch/manifest.webmanifest": "7e409b3eda002f072bbbb7209bbb8e348161b2af",
     "https://skycader.github.io/clutch/media/ngrx-TUFBSF6A.png": "16f8345bd8980833ee4a5ae92c9c6b76251b90d3",
     "https://skycader.github.io/clutch/polyfills-6EAL64PA.js": "d874147a12a6570d9b44e99935e9de8b7f3cabbc",
