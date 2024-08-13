@@ -37,7 +37,14 @@
   <input matSliderThumb [(ngModel)]="gas" />
 </mat-slider>
 
-<mat-slider style="width: 650px" min="0" max="5" step="1" showTickMarks>
+<mat-slider
+  [disabled]="clutch > 0"
+  style="width: 650px"
+  min="0"
+  max="5"
+  step="1"
+  showTickMarks
+>
   <input matSliderThumb [(ngModel)]="gear" />
 </mat-slider>
 
