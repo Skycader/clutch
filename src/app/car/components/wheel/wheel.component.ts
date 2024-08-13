@@ -62,12 +62,21 @@ export class WheelComponent {
 
     if (this.transmission > 1000) this.transmission = 1000;
 
-    this.transmission -= (1 + this.gear * 100 * 0.01) / (this.break + 0.01);
+    this.transmission -= (1 + this.gear) / (this.break + 0.01);
+    this.speed -= (this.break + 0.01) * 0.5;
+
     if (this.transmission < 0) this.transmission = 0;
 
-    this.speed = (this.transmission * 1 * 1.2) / 60;
-  }
+    if (this.speed < this.gear * 20) {
+      this.toSpeed = (this.transmission / 1000) * this.gear * this.clutch;
 
+      this.speed += this.toSpeed;
+    }
+
+    if (this.speed < 0) this.speed = 0;
+  }
+  public toSpeed =
+    (this.transmission / 800) * this.gear * 1.5 * (1 - this.clutch);
   public startAudio = new Audio('assets/sounds/start.m4a');
 
   public status = 'Start engine';
