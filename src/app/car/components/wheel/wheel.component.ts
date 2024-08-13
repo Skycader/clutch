@@ -63,7 +63,7 @@ export class WheelComponent {
     if (this.transmission > 1000) this.transmission = 1000;
 
     this.transmission -= (1 + this.gear) / (this.break + 0.01);
-    this.speed -= (this.break + 0.01) * 0.5;
+    this.speed -= (this.break + 0.01) * 0.2 + (1 - this.break);
 
     if (this.transmission < 0) this.transmission = 0;
 
