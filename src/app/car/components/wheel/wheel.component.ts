@@ -51,7 +51,7 @@ export class WheelComponent {
       if (this.transmission > 0)
         this.engine -=
           this.gear *
-          10 *
+          40 *
           (Math.abs(this.transmission - this.engine - 200) / 1000);
       if (this.engine < 0) this.engine = 0;
     }
